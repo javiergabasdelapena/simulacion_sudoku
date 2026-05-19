@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Base de datos local
+sudoku_stats.db
+
+# Reportaje y herramientas de generación
+build_report_pdf.py
+Reportaje_Sudoku.pdf
+*.pdf
+
+# IDE / SO
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
