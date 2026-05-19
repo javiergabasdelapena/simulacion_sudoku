@@ -1,0 +1,51 @@
+"""Constantes de ventana, colores y layout."""
+
+from __future__ import annotations
+
+# Ventana: ancho amplio, altura compacta
+WINDOW_WIDTH = 800
+WINDOW_HEIGHT = 600
+FPS = 60
+
+# Grid
+CELL_SIZE = 44
+GRID_SIZE = CELL_SIZE * 9
+GRID_X = (WINDOW_WIDTH - GRID_SIZE) // 2
+GRID_Y = 78
+TOOLBAR_Y = GRID_Y + GRID_SIZE + 10
+BUTTON_HEIGHT = 32
+STATS_BTN_Y = GRID_Y - 40
+STATS_BTN_WIDTH = 200
+STATS_BTN_HEIGHT = 34
+
+# Colores (R, G, B)
+COLOR_BG = (30, 30, 40)
+COLOR_TEXT = (240, 240, 240)
+COLOR_GRID = (80, 80, 100)
+COLOR_GRID_THICK = (200, 200, 220)
+COLOR_CELL_FIXED = (180, 200, 255)
+COLOR_CELL_USER = (255, 255, 255)
+COLOR_CELL_SELECTED = (70, 90, 140)
+COLOR_CELL_WRONG = (220, 60, 60)
+COLOR_CELL_HIGHLIGHT = (50, 60, 90)
+COLOR_NOTES = (160, 160, 180)
+COLOR_BUTTON = (60, 70, 100)
+COLOR_BUTTON_HOVER = (80, 95, 130)
+COLOR_BUTTON_ACTIVE = (100, 120, 170)
+COLOR_OVERLAY = (20, 20, 30)
+PAUSE_OVERLAY_ALPHA = 240
+
+# Fuentes (tamaños)
+FONT_TITLE = 40
+FONT_LARGE = 28
+FONT_MEDIUM = 22
+FONT_SMALL = 16
+FONT_NOTES = 11
+FONT_CELL = int(CELL_SIZE * 0.55)
+
+# Etiquetas de dificultad
+DIFFICULTY_LABELS: dict[str, str] = {
+    "easy": "Fácil",
+    "medium": "Medio",
+    "hard": "Difícil",
+}
